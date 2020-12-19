@@ -13,9 +13,36 @@ export default function App({navigation}){
   return(
     <NavigationContainer>
       <Stack.Navigator>
-       <Stack.Screen name="Welcome" component={StartScreen} />
-        <Stack.Screen name="Disount Cal 096" component={DiscountScreen} />
-        <Stack.Screen name="Result" component={ResultScreen} />
+       <Stack.Screen name="Welcome" component={StartScreen}  options={{
+         
+          headerStyle: {
+            backgroundColor: '#2f3b39',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }} />
+        <Stack.Screen name="Disount Cal 096" component={DiscountScreen} options={{
+      
+          headerStyle: {
+            backgroundColor: '#2f3b39',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}  />
+        <Stack.Screen name="History" component={ResultScreen} options={{
+          
+          headerStyle: {
+            backgroundColor: '#2f3b39',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}  />
       </Stack.Navigator>
     </NavigationContainer>
   )

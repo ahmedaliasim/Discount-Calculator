@@ -61,7 +61,7 @@ import Constants from 'expo-constants';
 
        const viewhistory =()=>{
 
-  navigation.navigate('Result',{ dataset:dataset })
+  navigation.navigate('History',{ dataset:dataset })
    
  }
 
@@ -84,7 +84,6 @@ import Constants from 'expo-constants';
 
   return (
     <View style={styles.container}>
-    <Text style={styles.colorscheme}>Dicount Cal 096</Text>
      <TextInput
         style={{ width: 100, textAlign: 'center', borderWidth: 2, borderRadius: 0 ,borderColor: 'black', height: 50, }}
         placeholder="Enter Price"
